@@ -1,0 +1,67 @@
+@media screen and (min-width: 1160px) {
+    .pricingGrid {
+        display: grid;
+        grid-template-columns: 21rem repeat(4, 1fr);
+    }
+    .pricingGrid.pricingHeadingsRow div.mobileHide {
+        display: grid;
+    }
+    .pricingGrid.firstRow > div {
+        padding: 60px 15px 40px;
+    }
+    .pricingGrid.firstRow > div {
+        position: relative;
+        text-align: left;
+    }
+    .pricingGrid.lastRow > div {
+        position: relative;
+    }
+    .planName {
+        display: block;
+        min-height: 6.25rem;
+    }
+    .planDescription {
+        display: block;
+        min-height: 4.7rem;
+        font-size: var(--fs-2);
+    }
+    .firstRow .button.pricingButton:not(#submit_btn) {
+        position: absolute;
+        inset: auto 20px 40px;
+    }
+    .selectedCol {
+        border-radius: 0;
+    }
+    .featuresContainer .selectedCol {
+        padding-top: 20px;
+    }
+    .featuresContainer .selectedCol::before {
+        display: none;
+    }
+    .firstRow .selectedCol {
+        border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+    }
+    .lastRow .selectedCol {
+        border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
+    }
+    .pricingHeadingsRow {
+        display: grid;
+        padding: 0;
+    }
+    .pricingHeadingsRow.lastRow > div {
+        text-align: left;
+    }
+    .colOneCheck::before,
+    .colTwoCheck::before,
+    .colThreeCheck::before,
+    .colFourCheck::before {
+        display: none;
+    }
+    .addon {
+        color: unset;
+    }
+    .popup {
+        max-width: 30%;
+        margin: 200px auto 10px;
+    }
+}

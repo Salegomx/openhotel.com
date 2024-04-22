@@ -1,0 +1,22 @@
+#mainContent .container > div {
+    display: block;
+}
+#mainContent .container a:has(.graphic) {
+    display: block;
+    margin-inline: auto;
+    width: 500px;
+    max-width: 100%;
+}
+.graphic {
+    max-width: 100%;
+}
+.blogTitle {
+    font-family: var(--ff-bold);
+    font-size: var(--fs-5);
+    text-decoration: none !important;
+    color: var(--clr-heading) !important;
+}
+.blogText * {
+    color: var(--clr-heading) !important;
+    font-size: var(--fs-3) !important;
+}

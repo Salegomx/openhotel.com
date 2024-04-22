@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'openhotelIcons';
+    src:  url('/templates/fonts/icons/openhotelIcons.eot?q94sfv');
+    src:  url('/templates/fonts/icons/openhotelIcons.eot?q94sfv#iefix') format('embedded-opentype'),
+    url('/templates/fonts/icons/openhotelIcons.ttf?q94sfv') format('truetype'),
+    url('/templates/fonts/icons/openhotelIcons.woff?q94sfv') format('woff'),
+    url('/templates/fonts/icons/openhotelIcons.svg?q94sfv#openhotelIcons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.ohIcon {
+    /* Use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'openhotelIcons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[DATA-ICON="247support"]::before {
+    content: "\e900";
+}
+[DATA-ICON="accessible"]::before {
+    content: "\e901";
+}
+[DATA-ICON="alert"]::before {
+    content: "\e902";
+}
+[DATA-ICON="backToTop"]::before {
+    content: "\e903";
+}
+[DATA-ICON="channelManagement"]::before {
+    content: "\e904";
+}
+[DATA-ICON="channels"]::before {
+    content: "\e905";
+}
+[DATA-ICON="chat"]::before {
+    content: "\e906";
+}
+[DATA-ICON="content"]::before {
+    content: "\e907";
+}
+[DATA-ICON="design"]::before {
+    content: "\e908";
+}
+[DATA-ICON="enterpriseManagement"]::before {
+    content: "\e909";
+}
+[DATA-ICON="facebook"]::before {
+    content: "\e90a";
+}
+[DATA-ICON="gaming"]::before {
+    content: "\e90b";
+}
+[DATA-ICON="guestMessaging"]::before {
+    content: "\e90c";
+}
+[DATA-ICON="PMSSystem"]::before {
+    content: "\e90d";
+}
+[DATA-ICON="housekeeping"]::before {
+    content: "\e90e";
+}
+[DATA-ICON="info"]::before {
+    content: "\e90f";
+}
+[DATA-ICON="keyLockSystems"]::before {
+    content: "\e910";
+}
+[DATA-ICON="landingPage"]::before {
+    content: "\e911";
+}
+[DATA-ICON="linkedIn"]::before {
+    content: "\e912";
+}
+[DATA-ICON="marketing"]::before {
+    content: "\e913";
+}
+[DATA-ICON="package"]::before {
+    content: "\e914";
+}
+[DATA-ICON="payments"]::before {
+    content: "\e915";
+}
+[DATA-ICON="POS"]::before {
+    content: "\e916";
+}
+[DATA-ICON="premierPartners"]::before {
+    content: "\e917";
+}
+[DATA-ICON="rateChanges"]::before {
+    content: "\e918";
+}
+[DATA-ICON="security"]::before {
+    content: "\e919";
+}
+[DATA-ICON="support"]::before {
+    content: "\e91a";
+}
+[DATA-ICON="twitter"]::before {
+    content: "\e91b";
+}
+[DATA-ICON="warning"]::before {
+    content: "\e91c";
+}
+[DATA-ICON="websiteAndBookingEngine"]::before {
+    content: "\e91d";
+}
+[DATA-ICON="yieldManagement"]::before {
+    content: "\e91e";
+}
+[DATA-ICON="youtube"]::before {
+    content: "\e91f";
+}
+[DATA-ICON="zeroDowntime"]::before {
+    content: "\e920";
+}

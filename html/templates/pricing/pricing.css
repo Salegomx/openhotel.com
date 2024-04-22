@@ -1,0 +1,274 @@
+/* PRICING FORM */
+#pricingFormContainer {
+    padding: 1.2rem;
+    background: var(--clr-secondary-lightest);
+    outline: 1px solid var(--clr-secondary-lighter);
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow);
+}
+#numberOfRoomsTitle /* ENTER YOUR NUMBER OF ROOMS */ {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--clr-black);
+    text-align: left;
+}
+label[FOR="num_rooms"] {
+    width: 100%;
+    margin-block: 1rem;
+    text-align: center;
+}
+#num_rooms /* NUMBER OF ROOMS INPUT #*/ {
+    width: 90%;
+    margin: 10px auto 0;
+    padding-inline: 0.5rem;
+    font-family: var(--ff-regular);
+    font-size: var(--fs-2);
+    font-weight: normal;
+    border: 1px solid #DDD;
+    border-radius: var(--border-radius-small);
+}
+/* Chrome, Safari, Edge, Opera */
+#num_rooms::-webkit-outer-spin-button,
+#num_rooms::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+#pricingForm input[type=number] {
+    -moz-appearance: textfield;
+}
+.fas.fa-bed {
+    margin-right: 0.3rem;
+}
+#submit_btn {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+#submit_btn:hover {
+    background: var(--clr-accent-dark)
+}
+.pricingFormInfo {
+    display: block;
+    width: 95%;
+    margin: 0 auto 0.625rem;
+    color: #444;
+    line-height: 1.2;
+}
+
+/* GRID */
+.pricingGrid {
+    list-style: none;
+}
+.pricingGrid > div {
+    padding: 20px;
+    text-align: center;
+}
+.pricingGrid.firstRow > div {
+    padding: 30px 15px;
+}
+.pricingGrid.firstRow > div#scrollHere,
+.pricingGrid.firstRow > div.selectedCol {
+    padding: 60px 15px 30px;
+}
+.planName {
+    display: block;
+}
+.planDescription {
+    display: block;
+    margin-block: 0.5rem;
+    font-size: var(--fs-2);
+}
+.pricingVal {
+    display: block;
+    text-align: center;
+}
+#pricing .pricingButton {
+    display: block;
+    margin-top: 30px;
+    padding: 5px;
+    font-family: var(--ff-regular);
+    font-size: var(--fs-1);
+    font-weight: lighter;
+    border-radius: var(--border-radius-small);
+    transition: all ease .2s;
+}
+#pricing .pricingButton:not(#submit_btn):hover {
+    color: var(--clr-white) !important;
+    background: var(--clr-accent);
+    outline: none;
+}
+#pricing .selectedCol .pricingButton:hover {
+    color: var(--clr-white) !important;
+    background: var(--clr-accent-dark);
+    outline: none;
+}
+.selectedCol {
+    position: relative;
+    background: hsl(var(--clr-secondary-base) 90%);
+    border-radius: var(--border-radius-small);
+}
+.firstRow .selectedCol::before {
+    content: 'Most Popular';
+    position: absolute;
+    inset: 0 0 auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    max-width: 8.5rem;
+    color: var(--clr-white);
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--clr-accent);
+}
+.pricingHeadingsRow {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid var(--clr-primary-dark);
+    border-bottom: 1px solid var(--clr-primary-dark);
+}
+.pricingHeadingsRow:not(.lastRow) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.featuresContainer .pricingGrid {
+    border-bottom: 1pt solid var(--clr-primary-lighter);
+}
+.pricingHeadingsRow.lastRow {
+    border-bottom: none;
+}
+.featuresContainer .pricingGrid .selectedCol {
+    border-bottom: 1pt solid var(--clr-white);
+}
+.pricingGrid > div:first-child {
+    text-align: left;
+}
+.featureLink {
+    font-size: var(--fs-2);
+    font-weight: unset;
+    color: var(--clr-heading);
+    text-decoration: none;
+    transition: all ease 2s;
+}
+.featureLink:hover {
+    text-decoration: none;
+}
+.fa-plus-circle {
+    color: var(--clr-secondary-dark);
+    margin-right: 3px;
+    transition: all ease .2s;
+}
+.featureLink:hover .fa-plus-circle {
+    color: var(--clr-secondary-darker);
+}
+.colOneCheck::before {
+    content: 'Property Management System';
+    font-weight: normal;
+    margin-right: 1.25rem;
+    font-size: var(--fs-1);
+}
+.colTwoCheck::before {
+    content: 'PMS & Channel Manager';
+    font-weight: normal;
+    margin-right: 1.25rem;
+    font-size: var(--fs-1);
+}
+.colThreeCheck::before {
+    content: 'PMS, CM & Yield Manager';
+    font-weight: normal;
+    margin-right: 1.25rem;
+    font-size: var(--fs-1);
+}
+.colFourCheck::before {
+    content: 'Enterprise (minimum of 3 properties)';
+    font-weight: normal;
+    margin-right: 1.25rem;
+    font-size: var(--fs-1);
+}
+.fa-check {
+    color: var(--clr-success-light);
+}
+.featuresContainer .selectedCol {
+    padding-top: 2.5rem;
+}
+.featuresContainer .selectedCol::before {
+    content: 'Most Popular';
+    position: absolute;
+    inset: 0 0 auto 0;
+    padding: 0.1rem 0.5rem;
+    color: var(--clr-white);
+    background-color: var(--clr-accent);
+    border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+}
+.addon {
+    color: var(--clr-accent);
+}
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    position: relative;
+    z-index: 9999;
+    margin: 70px 10px 10px;
+    padding: 1.875rem;
+    background: #FFFFFF;
+    border-radius: var(--border-radius-small);
+    transition: all 5s ease-in-out;
+    box-shadow: var(--box-shadow-topRight), var(--box-shadow-bottomLeft);
+}
+.popup .close {
+    --offset: 2rem;
+    position: absolute;
+    top: calc(var(--offset) * 0.75);
+    right: calc(var(--offset) * 0.75);
+    font-size: var(--offset);
+    font-weight: unset;
+    color: #222;
+    text-decoration: none;
+    transition: all 200ms;
+    line-height: 0.5;
+}
+.popup .close:hover {
+    color: var(--clr-error);
+}
+.popup .content {
+    margin-top: 1.5rem;
+    max-height: 50vh;
+    overflow: auto;
+    font-size: var(--fs-2);
+    line-height: 1.5;
+}
+a.outsideClose {
+    position: absolute;
+    inset: 0;
+    display: block;
+    cursor: default;
+}
+.faqLink {
+    display: block;
+    margin-block: 0.5rem;
+    font-weight: unset;
+    color: var(--clr-white);
+    text-decoration: none;
+}
+.faqLink:hover {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+.pricingHeadingsRow div.mobileHide {
+    display: none;
+}

@@ -1,0 +1,133 @@
+.subheadL {font-size: 18px; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; text-align: center; display: block;}
+.pricingTable {position: relative;}
+.pricingTable, .pricingRowHead {width: 100%; max-width: 1280px; border: 0; margin: 0 auto!important; box-sizing: border-box;}
+.pricingRowHead SECTION {background:#FFF; height: 70px; line-height: 70px; box-sizing: border-box; text-align: center!important;}
+.pricingColOne {width:100%!important;}
+.pricingColOne DIV {font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color:#666; margin-top:20px;}
+.pricingColOne SELECT {width: 100%; margin-top:5px;}
+.pricingCol {width: 100%!important; font-size: 14px; padding: 20px; vertical-align: top;}
+.pricingCol span {font-size: 30px; display: block; margin:25px 0 25px;}
+.pricingCol div {font-size: 24px; font-weight: 500; margin-top:30px;}
+.pricingButton {background: #2dbf24; color:#fff; display: block; width:100%;font-family: 'Source Sans Pro', sans-serif!important; font-size:14px; box-sizing: border-box; padding: 10px 20px!important; border-radius: 3px; text-decoration: none; margin: 30px 0 20px!important;}
+.pricingButton:hover {background: #359A3E; transition: all ease .2s;}
+#selectedCol {background: #e9f8fe; position: relative;}
+.mostPopular {display: block; background:#286fc8; color:#FFF; padding: 5px 10px; text-transform: uppercase; font-size: 14px; position: absolute; top:0; left:0; right:0; margin:auto; width:100px; text-align: center; }
+#selectedCol span, #selectedCol div {color:#286fc8;}
+.pricingRowHead SECTION {border-top:1px solid #000;border-bottom:1px solid #000; text-align: center; font-size: 24px; padding: 10px;}
+.tableFeature {border-bottom:1px solid #CCC;}
+.tableFeature section {text-align: left!important;}
+.pricingTable SECTION {vertical-align: top; padding: 20px!important; font-size: 16px; border-bottom: 1px solid #CCC;}
+.fa-check {color: #2DBF24;}
+.featureLink {font-size: 18px; color:#333; font-weight: bold; cursor: pointer; float: left; margin-top:30px;}
+.featureLink:hover .fa-plus-circle {color:#999!important; transition: all ease .2s;}
+.fa-plus-circle {color:#ccc; margin-right: 10px; transition: all ease .2s;}
+.mobileHide {display: none!important;}
+#colOneCheck:before {content: "Not so Not so Basic Plan Plan"; font-weight:normal; font-size: 16px; margin-right: 20px;}
+#colTwoCheck:before {content: "Above Average Plan (Most Popluar)"; font-weight: normal; font-size: 16px; margin-right: 20px;}
+#colThreeCheck:before {content: "The Works Plan"; font-weight: normal; font-size: 16px; margin-right: 20px;}
+#colFourCheck:before {content: "Multi Property (minimum of 3 properties)"; font-weight:normal; font-size: 16px; margin-right: 20px;}
+.faqContainer {background: #EEE; padding: 30px; margin: 50px 0 0 0;}
+.faqContainer H2 {font-size: 36px; font-weight: normal; text-align: center; border-bottom:1px solid #CCC; padding:0 0 30px 0; max-width: 1200px; margin: 0 auto;}
+.faqLink {position:relative; font-size: 18px; display: block; font-weight: normal; color: #000; border-bottom:1px solid #ccc; padding:20px 20px 20px 30px; max-width: 1200px; margin: auto; box-sizing: border-box;}
+.faqLink:hover {border-bottom:1px solid black; transition: all ease .2s!important;}
+.faqLink svg {display:inline-block; position: absolute; top:20px; left:0;}
+
+.finalCta {text-align: center; font-size: 24px; padding: 30px 30px 45px;}
+.finalCta div {font-size: 32px; margin: 40px 0 30px}
+.finalCta a {background: #2dbf24; color:#fff; font-size: 16px; display: inline-block; box-sizing: border-box; padding: 10px 20px; border-radius: 3px; text-decoration: none; margin: 30px 0;}
+.finalCta a:hover {background: #359A3E; transition: all ease .2s;}
+
+.bottomRow SECTION {height: 200px; text-align: center; padding: 30px!important;}
+.bottomRow .pricingColOne {display: none!important;}
+.bottomRow .pricingButton {max-width:200px; padding:10px!important; margin: 10px auto 0!important; float: none!important; line-height: 30px;}
+@media only screen and (min-width: 1280px) {
+	.tableFeature section {text-align: center!important;}
+	.subheadL {text-align: left;}
+	.featureLink {font-weight: normal;margin-top:0;}
+	.mobileHide {display: block!important;}
+	#colOneCheck:before, #colTwoCheck:before, #colThreeCheck:before ,#colFourCheck:before {display: none;}
+	.bottomRow .pricingColOne {display: block!important;}
+	.pricingColOne {width: 350px!important; text-align: left!important;}
+	.pricingCol  {width: 18%!important; min-height: 63px;}
+	.pricingTable SECTION {border-bottom: 0; }
+	.pricingCol span {margin:40px 0 25px;}
+	.faqContainer {padding: 70px;}
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+	z-index: 9998;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+	padding: 30px;
+	margin: 70px 10px 10px;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	transition: all 5s ease-in-out;
+	z-index: 9999;
+}
+
+.popup H2 {
+  margin-top: 0;
+  color: #333;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+    max-height:50vh;
+    overflow: auto;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+#outsideClose {position: absolute; top: 0; right: 0; left: 0; bottom:0; display: block; cursor: default;}
+
+@media screen and (min-width: 1200px){
+    #colOne {padding: 30px 20px 0 0!important;}
+    .box{width: 40%;}
+    .popup{width: 30%; margin: 70px auto 10px;}
+    .popup .content {font-size: 20px; padding: 10px;}
+    .headNew span{font-size:18px !important; }
+}
+
+@media only screen and (max-width: 800px) {
+    .headNew{top:25px !important; }
+    .headNew span{font-size:14px !important; }
+    #pricingPropertyBlock{top:50px;}
+}
